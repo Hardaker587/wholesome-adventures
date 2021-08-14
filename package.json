@@ -1,0 +1,16 @@
+{
+  "name": "wholesome-adventures",
+  "version": "1.0.0",
+  "scripts": {
+    "install-web": "cd wholesome-adventures-web && npm install && cd -",
+    "install-api": "cd wholesome-adventures-api && npm install && cd -",
+    "install": "npm run install-web && npm run install-api",
+    "dev-web": "cd wholesome-adventures-web && quasar dev && cd -",
+    "dev-api": "cd wholesome-adventures-api && npm run server && cd -",
+    "dev-all": "concurrently \"npm run dev-web\" \"npm run dev-api\"",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
