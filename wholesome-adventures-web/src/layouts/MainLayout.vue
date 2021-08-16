@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+  <q-layout view="lHh Lpr lFf" class="background_jungle">
+    <q-header elevated style="background-color: rgba(255,255,255,0.4)">
       <q-toolbar>
         <q-btn
           flat
@@ -12,16 +12,15 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          <q-img class="q-ma-md" src="/images/logos/wholesome-adventures-logo.svg" height="50px" fit="fill"/>
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Wholesome Adventures v1.0.0</div>
       </q-toolbar>
     </q-header>
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
       bordered
       class="bg-grey-1"
     >

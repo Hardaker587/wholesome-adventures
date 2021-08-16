@@ -24,6 +24,9 @@ Once you have completed those steps you can go ahead and launch the projects:
 - Frontend: https://localhost:3000
 - Api: http://localhost:5000
 
+# Note to self
+- Do not use SVGs for background images
+
 # Credits
 Api boilerplate: https://github.com/polcham/mongoose-express-ts
 ![MongoDB](https://webimages.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png?auto=format%2Ccompress)

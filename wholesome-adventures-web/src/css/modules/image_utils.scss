@@ -1,0 +1,25 @@
+@mixin background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: content-box;
+  background-attachment: fixed;
+}
+.background {
+  &_sunset {
+    background-image: url('/images/backgrounds/Sunset.png');
+    @include background
+  }
+  &_jungle {
+    background-image: url('/images/backgrounds/Jungle.png');
+    @include background
+  }
+  &_forest {
+    background-image: url('/images/backgrounds/Forest.png');
+    @include background
+  }
+  &_forest_animals {
+    background-image: url('/images/backgrounds/Forest_Animals.png');
+    @include background
+  }
+}
