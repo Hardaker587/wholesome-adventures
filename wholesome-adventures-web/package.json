@@ -8,14 +8,19 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
-    "server": "quasar serve"
+    "build": "quasar build",
+    "start": "node serve.js",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
     "@quasar/cli": "^1.0.0",
+    "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
+    "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "quasar": "^2.0.0",
+    "serve-static": "^1.14.1",
     "vuex": "^4.0.1"
   },
   "devDependencies": {
